@@ -1,10 +1,60 @@
-.App {
-  text-align: center;
+:root {
+  --heading-ff: "Oswald", sans-serif;
+  --regular-ff: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*--- General CSS ---*/
+body {
+  font-family: "Oswald", sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--heading-ff);
+}
+p,
+.p {
+  font-family: var(--regular-ff);
+}
+
+ul.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 320px;
+}
+li.nav-item a {
+  font-family: var(--heading-ff);
+}
+
+.div_center {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 67px);
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 67px);
+  justify-content: center;
+  align-items: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
